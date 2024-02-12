@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("Input name:", name);
+        var height=prompt("Input height: ", height);
+        var weight=prompt("Input weight:", weight);
+
+        var hconvert=Math.floor(height/12);
+        var hconvert2=height%12;
+        var wconvert=weight*2.205;
+
+        if(hconvert2>0)
+            alert('Name: '+name+'\nHeight: '+hconvert+'\''+hconvert2+'\"'+'\nWeight: '+wconvert+' lbs');
+        else
+            alert('Name: '+name+'\nHeight: '+hconvert+'\''+'\nWeight: '+wconvert+' lbs');
+        let text = "Do you agree to share your personal information with this site?";
+        if (confirm(text)==true){
+            if(hconvert2>0)
+                document.write('Name: '+name+'<br>Height: '+hconvert+'\''+hconvert2+'\"'+'<br>Weight: '+wconvert+' lbs');
+            else
+                document.write('Name: '+name+'<br>Height: '+hconvert+'\''+'<br>Weight: '+wconvert+' lbs');
+        }
+        else{
+            document.write("User does not wish to share their information")
+        }
+    </script>
+
+
+    <p id="response"></p>
+    <script>
+        var firstname=prompt("First Name: ", firstname);
+        var lastname=prompt("Last Name: ", lastname);
+        var byear=prompt("Birth year: ", byear);
+        var age=2024-byear;
+
+        document.getElementById("response").innerHTML="Hello "+firstname+" "+lastname+"!  How does it feel to be "+age+" years old?";
+
+    </script>
+
+</body>
+</html>
