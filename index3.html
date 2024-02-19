@@ -7,19 +7,6 @@
 </head>
 <body>
     <script>
-        var name=prompt("Input name:", name);
-        var height=prompt("Input height: ", height);
-        var weight=prompt("Input weight:", weight);
-
-        var hconvert=Math.floor(height/12);
-        var hconvert2=height%12;
-        var wconvert=weight*2.205;
-
-        if(hconvert2>0)
-            alert('Name: '+name+'\nHeight: '+hconvert+'\''+hconvert2+'\"'+'\nWeight: '+wconvert+' lbs');
-        else
-            alert('Name: '+name+'\nHeight: '+hconvert+'\''+'\nWeight: '+wconvert+' lbs');
-        
         let text = "Do you agree to share your personal information with this site?";
         if (confirm(text)==true){
             if(hconvert2>0)
