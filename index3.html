@@ -9,13 +9,13 @@
     <script>
         let text = "Do you agree to share your personal information with this site?";
         if (confirm(text)==true){
-            if(hconvert2>0)
-                document.write('Name: '+name+'<br>Height: '+hconvert+'\''+hconvert2+'\"'+'<br>Weight: '+wconvert+' lbs');
-            else
-                document.write('Name: '+name+'<br>Height: '+hconvert+'\''+'<br>Weight: '+wconvert+' lbs');
+        if(hconvert2>0)
+            console.log('Name: '+name+'. Height: '+hconvert+'\''+hconvert2+'\"'+'. Weight: '+wconvert+' lbs');
+        else
+            console.log('Name: '+name+'. Height: '+hconvert+'\''+'. Weight: '+wconvert+' lbs');
         }
         else{
-            document.write("User does not wish to share their information")
+            console.log("User does not wish to share their information")
         }
     </script>
 </body>
